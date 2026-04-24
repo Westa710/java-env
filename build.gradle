@@ -1,0 +1,12 @@
+plugins {
+    id 'application'
+    id 'java'
+}
+
+// JARファイルの作成
+jar {
+    manifest {
+        // TODO: ここを変更！！
+        attributes 'Main-Class': 'example1.example'
+    }
+}

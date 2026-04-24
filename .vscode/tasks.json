@@ -1,0 +1,31 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "run",
+      "type": "shell",
+      "command": "java -jar ./build/libs/java-env.jar",
+      "dependsOn": "gradle build",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "showReuseMessage": false,
+        "clear": true
+      }
+    },
+    {
+      "label": "gradle build",
+      "type": "shell",
+      "command": "gradle build",
+      "presentation": {
+        "reveal": "silent",
+        "panel": "dedicated",
+        "showReuseMessage": false
+      }
+    }
+  ]
+}
