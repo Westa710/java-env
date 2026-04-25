@@ -5,7 +5,5 @@ public class example {
         System.out.println("Hello World");
         System.out.println("changed");
 
-        int a = 100;
-        System.out.println(a);
     }
 }
